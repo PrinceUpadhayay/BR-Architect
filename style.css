@@ -1,6 +1,8 @@
 * {
     font-family: Verdana, sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 
 }
@@ -10,11 +12,12 @@
     padding: 16px 32px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
     background-color: white;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    left: 0px;
-    top: 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-item {
@@ -45,11 +48,6 @@ span {
     font-weight: bold;
     white-space: normal;
 }
-
-.float-left {
-    float: left;
-}
-
 .float-right {
     float: right;
 
@@ -64,9 +62,9 @@ span {
 /* Slider style start */
 
 .slider {
-
+    margin: auto ;
     position: relative;
-    left: 10px;
+    /* left: 10px; */
     max-height: 100%;
     font-size: 30px;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -81,20 +79,26 @@ span {
 }
 
 .inside-content {
+    border: 2px solid black;
     position: absolute;
     z-index: 1;
-    left: 51%;
-    top: 51%;
-    transform: translate(-50%, -50%);
     letter-spacing: 4px;
     color: white;
+
+    left: 50% ;
+    top : 50% ; 
+    /* transform: translate(-50%, -50%); */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .boxshadow {
     background-color: black;
     padding: 10px;
     opacity: 0.75;
-
 }
 
 /* Slider ends here */
@@ -102,11 +106,8 @@ span {
 /* Project Start here */
 
 .project-section {
-    /* outline : 2px solid black; */
     margin: 45px 15px;
-    position: relative;
-    height: 600px;
-    /* outline: 2px solid black; */
+    position: relative;  
 }
 
 .section-head p {
@@ -120,17 +121,14 @@ span {
 }
 
 .project-body {
-    /* outline: 2px solid blue; */
-    height: 475px;
-    width: 100%;
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-item {
-    float: left;
     position: relative;
-    width: 23.9%;
-    margin: 0px 8px 15px;
+    width: 25%;
+    padding: 10px;
 }
 
 .project-item img {
@@ -139,8 +137,8 @@ span {
 
 .project-item-head {
     position: absolute;
-    left: 0;
-    top: 0;
+    /* left: 10px; */
+    /* top: 10px; */
     padding: 8px 16px;
     color: white;
     background-color: black;
@@ -152,9 +150,7 @@ span {
 .about-section {
     margin: 45px 15px;
     padding: 0px;
-    /* outline : 2px solid black ;  */
     max-width: 100%;
-    height: 500px;
     filter: grayscale(75%);
 }
 
@@ -164,20 +160,19 @@ span {
 }
 
 .about-body {
+    display: flex;
     height: auto;
     width: 100%;
-    /* margin-top: 50px; */
-    /* margin-left: 15px; */
 
 }
 
 .about-item {
     width: 24%;
-    /* margin: 10px 7px; */
     left: 0;
     top: 0;
     font-weight: 400;
     margin: 10px 14px 0px 0px;
+    /* text-align: center; */
 }
 
 .about-item-head {
@@ -193,8 +188,8 @@ span {
 }
 
 .about-item button {
-    width: 350px;
-    height: 40px;
+    width: 100%;
+    padding: 10px;
     border-style: none;
     font-size: 17px;
 }
@@ -213,9 +208,7 @@ span {
     /* outline: 2px solid black ;  */
 
     margin: 45px 15px;
-
     max-width: 100%;
-    height: 350px;
 }
 
 .contact-section form {
@@ -226,7 +219,6 @@ span {
     /* display: block; */
     padding: 10px 0px 8px 4px;
     width: 100%;
-    /* margin-top: 16px; */
     margin-bottom: 20px;
     font-size: 15px;
 }
@@ -265,7 +257,6 @@ span {
 .footer-bar {
     outline: 2px solid black;
     background-color: black;
-    height: 100px;
     width: 100%;
     color: white;
     text-align: center;
