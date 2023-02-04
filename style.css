@@ -63,6 +63,10 @@ span {
     width: 100%;
 }
 
+.inside-img img{
+    width: 100% ;
+}
+
 .inside-content {
     position: absolute;
     letter-spacing: 4px;
@@ -130,16 +134,16 @@ span {
 
 .about-body {
     display: flex;
-    height: auto;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .about-item {
-    width: 24%;
+    width: 25%;
     left: 0;
     top: 0;
     font-weight: 400;
-    margin: 10px 14px 0px 0px;
+    padding: 10px 14px 0px 0px;
 }
 
 .about-item-head {
@@ -220,6 +224,7 @@ span {
     text-align: center;
     padding-top: 30px;
     font-size: 17px;
+    padding-bottom: 50px;
 }
 
 
@@ -229,3 +234,33 @@ span {
     color: white;
 }
 /* footter section Ends */
+
+/* Responisve Styling start */
+
+@media (max-width: 630px) {
+
+    .navbar .right-menu{
+        display: none ;
+    }
+
+    .none-630{
+        display: none;
+    }
+
+    .project-item{
+        width: 100%;
+    }
+
+    .about-item{
+        width : 100% ; 
+    }
+}
+@media (min-width:630px) and (max-width: 999px) {
+    .project-item{
+        width: 50%;
+    }
+    
+    .about-item{
+        width : 50% ; 
+    }
+}
