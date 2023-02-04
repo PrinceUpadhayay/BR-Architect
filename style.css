@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Main Section Starts here */
+.mw-1500{
+    max-width: 1500px;
+}
+
+.m-a{
+    margin: auto;
+}
+/* Main Section Ends here */
+
 /* Navbar style start */
 .navbar {
     padding: 16px 32px;
@@ -52,7 +62,10 @@ span {
 /* Slider style start */
 
 .slider {
-    margin: auto;
+    /* 
+    I handle the margin auto class above using the m-a 
+    margin: auto; 
+    */
     position: relative;
     font-size: 30px;
     font-family: "Segoe UI", Arial, sans-serif;
